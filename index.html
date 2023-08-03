@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A.V. Savenkov</title>
+
+    <!-- Подключаем шрифт -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Подключаем иконки -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Подключаем иконки -->
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <!-- Сильно переработал сайт, фактически, сделал заново. Что нового попробовал:
+    - подключение шрифтов, картинок через сайты (выше);
+    - попробовал более сложные анимации, которые требовали применения дополнительных сайтов - для вычисления радиуса границы, градиенты и т.д.;
+    - познакомился с grid. Интересная система по сравнению со стандартными таблицами. Но нужна более актуальная информация, т.к. некоторые методы устарели и зачеркиваются VS;
+    - есть какой-то баг с разметкой: фото должно было уйти вправо как раз при использовании grid (а именно - автоширины), но осталось внизу. Возможно, где-то ошибся с упаковкой div'ов одного в другой. Причину найти так и не смог, пожалуйста, помогите советом. -->
+  </head>
+
+  <body>
+    <header class="header">
+      <a class="headerLogo logo" href="#">Сайт Артёма Савенкова</a>
+    </header>
+
+    <div class="hero">
+      <div class="container heroContainer">
+        <div class="heroAbout">
+          <h1 class="heroTitle">FULLSTACK JAVASCRIPT</h1>
+          <h2 class="heroSubtitle">Артём Савенков</h2>
+
+          <p class="heroDescription">
+            Привет, я занимаюсь разработкой backend'a и frontend'a, но больше
+            люблю backend. Посотрудничаем?
+          </p>
+
+          <div class="descriptionPlus">
+            А ещё я:
+            <li>
+              профессиональный интернет-маркетолог с опытом более 10 лет в
+              сложных нишах, включая b2b;
+            </li>
+            <li>
+              был аспирантом в "Нетологии", помогал студентам обучиться
+              продвижению;
+            </li>
+            <li>
+              разработал и вёл свой собственный курс продвижения в социальных
+              сетях на базе МГУТУ им. Разумовского;
+            </li>
+            <li>хожу в походы, особенно по рекам;</li>
+            <li>люблю и умею учиться.</li>
+          </div>
+
+          <div class="heroLinks">
+            <a
+              class="heroSocial"
+              href="https://docs.google.com/document/d/1gGI_c6IrNXhyu4VKc0d-k0MwE3Yu05eZppBMsZhGBHo/edit?usp=sharing"
+            >
+              <i class="bx bxs-hot"></i>
+            </a>
+            <a class="heroSocial" href="#">
+              <i class="bx bxs-wink-smile"></i>
+            </a>
+            <a class="heroSocial" href="https://vk.com/orgtaktik">
+              <i class="bx bxl-vk"></i>
+            </a>
+            <a
+              class="heroSocial"
+              href="https://hh.ru/applicant/resumes?hhtmFrom=main"
+            >
+              <i class="bx bxs-contact"></i>
+            </a>
+          </div>
+        </div>
+        <div class="heroBox">
+          <img class="heroBoxImg" src="foto_1.png" alt="ami" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
